@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #72cbee, #c468e9);
+  height: 100vh;
+  padding-top: 1%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.25rem solid #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav:hover::before {
+  width: 100%;
+}
+
+#top-title {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+main {
+  padding: 75px;
+}
+
+#slider {
+  padding: 50px 1rem;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+#products h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-top: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-description {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+#connect-wallet-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-container {
+  width: calc(25% - 40px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.product-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-container h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-container p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product-container .product-description {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.product-container .buy-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.product-container .buy-button:hover {
+  background-color: #3e8e41;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .product-container {
+      width: calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+      width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .product-container {
+      width: calc(100% - 40px);
+  }
+}

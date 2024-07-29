@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #72cbee, #c468e9);
+    height: 100vh;
+    padding-top: 1%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.25rem solid #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav:hover::before {
+    width: 100%;
+}
+
+main {
+    padding: 1rem;
+}
+
+div {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#top-title {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    #top-title {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 576px) {
+    #top-title {
+        font-size: large;
+    }
+
+    div {
+        padding: 0.5rem;
+    }
+}

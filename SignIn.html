@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login</title>
+    <script src="node_modules/web3.js-browser/build/web3.js"></script>
+	<script src="node_modules/web3.js-browser/build/web3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+	<script src="script.js"></script>
+    <script src="LoginPageScript.js"></script>
+
+    <title>GoBuy - Sign In</title>
+   
+    <link rel="stylesheet" href="styles.css">
+    <header>
+		<h1 id = "top-title">GoBuy.com</h1>
+		<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>				
+				<li><a href="Orders.html">Orders</a></li>
+				<li><a href="Profile.html">Profile</a></li>	
+				<li><a href="Seller.html">Seller</a></li>			
+				<li><a href="SignIn.html">Log In</a></li>
+				<li><a href="About.html">About</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+			</ul>
+		</nav>
+	</header>
+  </head>
+  <body>
+    <style>
+        #top-title{
+            color: #fff;
+        }
+
+    body{
+        background: linear-gradient(135deg, #72cbee, #c468e9);
+        height: 100vh;
+        padding: 10px;
+    }
+    section{
+        max-width: 400px;
+        width: 100%;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+        transition: transform 0.2s ease;        
+    }
+
+    section:hover{
+        transform: translateY(-0.25rem);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    } 
+
+    h1{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        color: #000000;
+        font-size: 800;
+        text-shadow: #111111;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: bold;  
+         
+    }
+    .connect_button{
+        
+        height: 55px;
+        margin: 20px 0;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #6caad3, #a257c0);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+    }
+    
+    .submit_button{
+        font-size: xx-large;
+        height: 55px;
+        margin: 30px 0;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fffafa;
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #6caad3, #a257c0);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+    }
+    input{
+        height: 25px;
+        width: 100%;
+        font-size: 13px;
+        border-radius: 5px;
+        padding-left: 5px;
+        width: 100%;
+        
+    }
+    label{
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    }
+    body{
+    background: linear-gradient(135deg, #72cbee, #c468e9);
+    height: 100vh;
+    padding-top: 1%;
+}
+    </style>   
+    <h1>Login</h1>
+    <section>
+
+    <form id="login-form">
+        <button type="button" id="connect-wallet-btn" class="connect_button">Connect to Wallet</button>
+        <br><br>
+        <label for="name">Name     </label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" id="phone-number" name="phone-number" required>
+        <br><br> 
+        <label for="home-address">Home Address</label>
+        <input type="text" id="home-address" name="home-address" required>
+        <br><br>  
+        <button type="submit" id="submit-button" class="submit_button">Login</button>
+    </form>
+
+    </section>
+  </body>
+</html>

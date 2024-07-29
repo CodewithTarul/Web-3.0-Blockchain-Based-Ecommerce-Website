@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="module" src="script.js"></script>
+	<script src="node_modules/web3.js-browser/build/web3.js"></script>
+	<script src="node_modules/web3.js-browser/build/web3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+    <!--<script src="connectbuttonscript.js"></script>-->
+	<!--<script type="module" src="web3scriptregisterproduct.js"></script>-->
+	<!--<script src="web3DisplayProductsScript.js"></script>-->
+
+	<title>GoBuy - Seller Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="GlobalStyles.css">
+	<style>
+		
+		
+		
+		p {
+			font-size: 1.2rem;
+			line-height: 1.5;
+			color: #000000;
+			margin: 2rem 0;
+            margin-top: 2rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            text-align: justify;
+		}
+		#testimonials {
+			background-color: #f7f7f7;
+			padding: 50px 0;
+		}
+
+		#testimonials h2 {
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 50px;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.testimonial {
+			width: 350px;
+			background-color: #fff;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+			margin: 20px;
+			padding: 30px;
+			position: relative;
+		}
+
+		.testimonial:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			border-top: 20px solid #fff;
+			border-right: 20px solid transparent;
+			border-left: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+		}
+
+		.testimonial:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			border-bottom: 20px solid #fff;
+			border-right: 20px solid transparent;
+			border-left: 20px solid transparent;
+			border-top: 20px solid transparent;
+		}
+
+		.image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0 auto 30px;
+		}
+
+		.image img {
+			max-width: 100%;
+		}
+		.testimonial i {
+			position: absolute;
+			top: -20px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 40px;
+			color: #f7f7f7;
+		}
+		h2 {
+    		color: rgb(104, 104, 104);
+  		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		
+		<h1 id = "top-title">GoBuy.com</h1>
+		<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>				
+				<li><a href="Orders.html">Orders</a></li>
+				<li><a href="Profile.html">Profile</a></li>	
+				<li><a href="Seller.html">Seller</a></li>			
+				<li><a href="SignIn.html">Log In</a></li>
+				<li><a href="About.html">About</a></li>
+        		<li><a href="Cart.html">Cart</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <p>
+		</br></br>Welcome to Go Buy, where we are leveraging the power of web3 technology to create a unique and innovative e-commerce experience. Our mission is to provide customers with access to high-quality, sustainable products, while also driving positive social and environmental impact.
+
+Founded in 2022, our team is made up of passionate individuals who are committed to creating a better future for our planet. Our journey began with a shared vision of building a brand that would make a difference in the world, and we have been working tirelessly ever since to bring that vision to life.
+
+At Go Buy, we believe that web3 technology has the potential to transform the way we think about e-commerce. </br></br>By using blockchain and decentralized systems, we are able to offer our customers greater transparency, security, and control over their data and transactions. We also believe that this technology can help us build a more sustainable future, by reducing waste and creating more efficient supply chains.
+
+But our commitment to sustainability doesn't stop there. We are also proud to partner with a number of organizations that share our values, and to support initiatives that are making a real difference in the world. From reducing plastic waste to supporting regenerative agriculture, we are always looking for ways to make a positive impact on the planet and its people.
+
+We know that our customers care about the products they buy and the impact they have on the world. That's why we are dedicated to providing high-quality, sustainable products that are made with care and attention to detail. From organic cotton clothing to eco-friendly home goods, we offer a wide range of products that are designed to meet the needs of our conscious customers.
+
+But don't just take our word for it. Here's what some of our satisfied customers have to say:</br></br>
+
+<section id="testimonials">
+	<h2>Testimonials</h2>
+	<div class="container">
+	  <div class="testimonial">
+		<div class="image">
+		  <img src="https://www.unigreet.com/wp-content/uploads/2023/03/Cute-Cat-Whatsapp-Dp-HD-781x1024.jpg" alt="Person 1">
+		  <i class="fas fa-quote-left"></i>
+		</div>
+		<div class="content">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor sapien nec eros aliquet commodo. Donec pulvinar mi non libero volutpat, at convallis velit ullamcorper. Integer id congue magna. Donec convallis tortor magna, ac fringilla massa efficitur vel.</p>
+		  <h3>John Doe</h3>
+		  <h4>CEO, ABC Company</h4>
+		</div>
+	  </div>
+	  <div class="testimonial">
+		<div class="image">
+		  <img src="https://yohohindi.com/wp-content/uploads/2022/08/4-girls-dp-yohohindi.com_.jpeg" alt="Person 2">
+		  <i class="fas fa-quote-left"></i>
+		</div>
+		<div class="content">
+		  <p>Quisque volutpat ex at odio bibendum, in suscipit velit aliquet. Vestibulum vitae magna vel sapien pellentesque feugiat. Duis hendrerit dui id ante gravida congue. Morbi id risus ultricies, viverra lorem eget, ultricies sapien.</p>
+		  <h3>Jane Smith</h3>
+		  <h4>Marketing Manager, XYZ Inc.</h4>
+		</div>
+	  </div>
+	  <div class="testimonial">
+		<div class="image">
+		  <img src="https://helostatus.com/wp-content/uploads/2021/08/profile-pictures-for-WhatsApp.jpg" alt="Person 2">
+		  <i class="fas fa-quote-left"></i>
+		</div>
+		<div class="content">
+		  <p>Quisque volutpat ex at odio bibendum, in suscipit velit aliquet. Vestibulum vitae magna vel sapien pellentesque feugiat. Duis hendrerit dui id ante gravida congue. Morbi id risus ultricies, viverra lorem eget, ultricies sapien.</p>
+		  <h3>Jane Smith</h3>
+		  <h4>Marketing Manager, XYZ Inc.</h4>
+		</div>
+	  </div>
+	</div>
+  </section></br></br>
+
+If you have any questions or feedback, we would love to hear from you. You can reach us at gobuyecommerce@gmail.com.</br></br>
+
+Thank you for choosing Go Buy, and for joining us on our mission to create a better future for all.
+        </p>
+	</main>
+	<footer>
+		<p>&copy; 2023 GoBuy</p>
+	</footer>
+	
+</body>
+</html>

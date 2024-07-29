@@ -1,0 +1,7 @@
+security token is    4508c193-29f7-4b40-8164-2122e0e1344f
+
+User name- gobuyecommerce@gmail.com
+Pasword- 6640DAC500D54EE136C7D15C52A1852111A9
+
+Server- smtp.elasticemail.com
+Port- 2525
